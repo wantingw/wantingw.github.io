@@ -10,7 +10,7 @@
   
   <title>
     
-      Signals and System | One Thing
+      Hardware | One Thing
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -180,8 +180,8 @@
 </header>
 
     <div id="article-banner">
-  <h2>Signals and System</h2>
-  <p class="post-date">2022-08-31</p>
+  <h2>Hardware</h2>
+  <p class="post-date">2022-10-09</p>
   <div class="arrow-down">
     <a href="javascript:;"></a>
   </div>
@@ -189,10 +189,25 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><p>[TOC]</p>
-<h1 id="Systems-Properties"><a href="#Systems-Properties" class="headerlink" title="Systems Properties"></a>Systems Properties</h1><ol>
-<li><p>Stability</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Bounded Input-Bounded Output (BIBO) stable system: every bounded input produces a bounded output</span><br><span class="line">--&gt; a cts-time system is BIBO stable iff</span><br><span class="line">													|x(t)|≤Mx &lt;∞ =⇒ |y(t)|≤My &lt;∞</span><br><span class="line">		for all t.</span><br><span class="line"></span><br><span class="line">--&gt; a dst-time system is BIBO stable iff</span><br><span class="line">													|x[n]|≤Mx &lt;∞ =⇒ |y[n]|≤My &lt;∞</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+    <section class="markdown-content"><h1 id="Op-Amps"><a href="#Op-Amps" class="headerlink" title="Op Amps"></a>Op Amps</h1><ol>
+<li><p>What is an op-amp?</p>
+<p>Operational Amplifiers, also known as Op-amps, are a volatge amplifying device. </p>
+<img src="https://www.allaboutcircuits.com/uploads/articles/op-amp-in-schematics.jpg" alt="Example of an Op-amp in schematics." style="zoom:50%;">
+
+<p>The <strong>ideal op amp</strong> is not supposed to draw any input current; that is, the signal current into terminal 1 and the signall current into terminal 2 are both zero. In other word, the input impedance of an ideal op-amp is supposed to be <strong>infinite</strong>. </p>
+</li>
+<li><h3 id="Non-Inverting-Op-Amp"><a href="#Non-Inverting-Op-Amp" class="headerlink" title="Non-Inverting Op-Amp"></a>Non-Inverting Op-Amp</h3><img src="/2022/10/09/Hardware/Interview-2.png" style="zoom:100%;">
+
+<ol start="2">
+<li><h3 id="Inverting-Op-Amp"><a href="#Inverting-Op-Amp" class="headerlink" title="Inverting Op-Amp"></a>Inverting Op-Amp</h3><p><img src="/2022/10/09/Hardware/Interview-3.png">  </p>
+</li>
+<li><h3 id="Non-inveting-Summng-Amp"><a href="#Non-inveting-Summng-Amp" class="headerlink" title="Non-inveting Summng Amp"></a>Non-inveting Summng Amp</h3></li>
+</ol>
+</li>
+</ol>
+<hr>
+<h1 id="Logic-Design"><a href="#Logic-Design" class="headerlink" title="Logic Design"></a>Logic Design</h1><ol>
+<li><h3 id="Combination-Circuit-Vs-Sequential-Circuit"><a href="#Combination-Circuit-Vs-Sequential-Circuit" class="headerlink" title="Combination Circuit Vs. Sequential Circuit"></a>Combination Circuit Vs. Sequential Circuit</h3><img src="https://d8it4huxumps7.cloudfront.net/bites/wp-content/banners/2022/1/61f27521e8541_difference_between_combinational_and_sequential_circuit.png?d=700x400" alt="Difference Between Combinational and Sequential Circuit // Unstop (formerly  Dare2Compete)"></li>
 </ol>
 </section>
     <!-- Tags START -->
@@ -216,20 +231,13 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-      <a class="nav-left" href="/2022/06/20/Arduino-Windows-Remote/">
+      <a class="nav-left" href="/2022/10/08/test/">
         <span class="nav-arrow">← </span>
-        
-          Arduino - Traffic Light Simulator
-        
-      </a>
-    
-    
-      <a class="nav-right" href="/2022/10/08/test/">
         
           test
         
-        <span class="nav-arrow"> →</span>
       </a>
+    
     
   </div>
 
@@ -281,7 +289,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Systems-Properties"><span class="toc-nav-text">Systems Properties</span></a></li></ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Op-Amps"><span class="toc-nav-text">Op Amps</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Non-Inverting-Op-Amp"><span class="toc-nav-text">Non-Inverting Op-Amp</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Inverting-Op-Amp"><span class="toc-nav-text">Inverting Op-Amp</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Non-inveting-Summng-Amp"><span class="toc-nav-text">Non-inveting Summng Amp</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Logic-Design"><span class="toc-nav-text">Logic Design</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Combination-Circuit-Vs-Sequential-Circuit"><span class="toc-nav-text">Combination Circuit Vs. Sequential Circuit</span></a></li></ol></li></ol></li></ol>
     
   </div>
 </aside>
@@ -291,7 +299,7 @@
 
 <script>
   (function () {
-    var url = 'http://example.com/2022/08/31/Signals-Systems/';
+    var url = 'http://example.com/2022/10/09/Hardware/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
